@@ -11,7 +11,6 @@ public class Sol{
 	public static void main(String[] args) {
 		Book[] b=new Book[4]; 
 		   
-		   
 		   int id;
 		   String title;
 		   String author;
@@ -49,28 +48,29 @@ public class Sol{
 	
 	  public static Book[] sortBooksByPrice(Book[] b) { 
 		  System.out.println("hi");
-		//  Book[] b2=null; 
+		 //Book[] Temp=new Book[4];
 		  
-		
+	
 		  for (int i = 0; i< b.length; i++) { 
 			  for (int j = i + 1; j < b.length; j++) {
 				 
 		  if(b[i].getPrice() > b[j].getPrice()) { 
+			  
+		  Book Temp = b[i];
+		  b[i]=b[j];
+		  b[j]=Temp;
 		  
-		//  System.out.println(Temp);
-		  //System.out.println(b[i].getPrice());
-		  //System.out.println(b[j].getPrice());
-		  
-		  double Temp = b[i].getPrice();
-		  double ii=b[i].getPrice();
-		  ii=b[j].getPrice();
-		  double jj= b[j].getPrice();
-		  jj=Temp; 
 		  }
+
 		  } 
-		}
-	  
-		  return b;
+		}		
+		  
+		/*
+		 * double Temp = b[i].getPrice(); b[i].setPrice(b[j].getPrice());
+		 * b[j].setPrice(Temp);
+		 */
+		  
+		  		  return b;
 }
 	}
 
