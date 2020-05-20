@@ -35,28 +35,29 @@ public class Solution_shirt {
     
     
     public static double getDiscountPrice(Shirt s) {
-    	double p,k;
+    	double p;
    
   
     	
     		 if (Character.toString(s.getG()).equals("m")) {
-    			 p= s.getPrice()-(s.getPrice()*(10/100));
+    			 p= s.getPrice()-s.getPrice()*10/100;
     			
     			 s.setPrice(p);
-    			 k=s.getPrice();
-    			 System.out.println("price m");
-    			 System.out.println(k);
-    			 System.out.println("----------------");
+    			 
+    			
     		 }
     		 if (Character.toString(s.getG()).equals("f")) {
-    			 p= s.getPrice()-s.getPrice()*(20/100);
+    			 p= s.getPrice()-s.getPrice()*20/100;
     			 
     			 s.setPrice(p);
+    			
 
     		 }
     		 if (Character.toString(s.getG()).equals("u")) {
-    			 p= s.getPrice()-s.getPrice()*(30/100);
+    			 p= s.getPrice()-s.getPrice()*30/100;
     			 s.setPrice(p);
+    		
+
     		 }
          
     	return s.getPrice();
