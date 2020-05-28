@@ -124,3 +124,23 @@ class Book
 	
 	
 } 
+
+
+#inputs   output-- 1 2
+1
+hello world
+aaa writer
+50
+2
+World cup
+bbb writer
+55
+3
+Planet earth
+ccc writer
+45
+4
+India's history
+ddd writer
+40
+WORLD
